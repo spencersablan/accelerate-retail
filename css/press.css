@@ -1,0 +1,120 @@
+.press {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 900px
+}
+
+.press-welcome {
+    height: 800px
+}
+
+.press-content-container {
+    width: 1100px;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.press-card {
+    position: relative;
+    background: white;
+    box-shadow: var(--shadow);
+    width: 350px;
+    height: 500px
+}
+
+.press-card-img-container {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.press-card-img {
+    max-height: 100%;
+    width: 100%;
+    object-fit: contain
+}
+
+.press-card-text-container {
+    background: white;
+    width: 100%;
+    height: 175px;
+    position: absolute;
+    bottom: 0;
+    padding: 10px
+}
+
+.press-card-text-container p {
+    text-align: left;
+    margin-top: 10px;
+    font-size: 13px
+}
+
+.press-card-link:link,
+.press-card-link:visited {
+    color: black
+}
+
+.press-card-link:hover,
+.press-card-link:active {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.425);
+    transform: translateY(-5px);
+    transition: 1s
+}
+
+@media screen and (max-height: 850px) {
+    .press-welcome {
+        height: 700px
+    }
+}
+
+@media screen and (max-height: 700px) {
+    .press-welcome {
+        height: 500px
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .press {
+        height: 2300px
+    }
+    .press-content-container {
+        width: 600px;
+        height: 2200px;
+        flex-direction: column
+    }
+    .press-card {
+        width: 100%;
+        height: 700px
+    }
+    .press-card-img-container {
+        height: 600px
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .press {
+        height: 1700px
+    }
+    .press-welcome-text {
+        top: 40px
+    }
+    .press-content-container {
+        width: 300px;
+        height: 1500px
+    }
+    .press-card {
+        height: 475px
+    }
+    .press-card-img-container {
+        height: 300px
+    }
+    .press-card-text-container {
+        height: 200px
+    }
+}
