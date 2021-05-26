@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(() => {
     $('.welcome-img-slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -7,6 +7,7 @@ $(document).ready(function(){
         arrows: false,
         variableWidth: true,
         variableHeight: true,
-        centerMode: true
+        centerMode: true,
+        lazyLoad: true
     });
 });

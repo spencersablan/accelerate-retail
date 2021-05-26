@@ -21,125 +21,131 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-CRKQ2WP0YE"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-    gtag('config', 'G-CRKQ2WP0YE');
+        gtag('config', 'G-CRKQ2WP0YE');
     </script>
 </head>
 
 <body id="connect">
-    
+
     <div id="loading"><img src="/media/main-arrow-min.png"></div>
 
-    <header class="animatedParent animateOnce">
-        <a href="./index.html"><img class="header-logo animated fadeInUpShort" src="/media/main-horizontal-min.png" alt="Accelerate Retail Partners" /></a>
-        <nav class="animated fadeInUpShort">
-            <ui class="menu">
-                <li class="menu-item-container">
-                    <a class="menu-item" id="home" href="./index.html">home</a>
-                </li>
-                <li class="menu-item-container">
-                    <a class="menu-item" id="services" href="./services.html">services</a>
-                </li>
-                <li class="menu-item-container">
-                    <a class="menu-item" id="press" href="./press.html">press</a>
-                </li>
-                <li class="menu-item-container">
-                    <a class="menu-item" id="connect" href="./connect.html"
-                        style="color: rgb(70, 70, 70)">connect</a>
-                </li>
-            </ui>
-            <i class="nav-bars fas fa-bars" onclick="openNav()"></i>
-        </nav>
-        <nav class="nav-mobile">
-            <i class="exit-mobile fas fa-times" onclick="closeNav()"></i>
-            <ul class="mobile-menu">
-                <li>
-                    <a class="mobile-menu-item" href="./index.html">home</a>
-                </li>
-                <li>
-                    <a class="mobile-menu-item" href="./services.html">services</a>
-                </li>
-                <li>
-                    <a class="mobile-menu-item" href="./press.html">press</a>
-                </li>
-                <li>
-                    <a class="mobile-menu-item" href="./connect.html" style="color: var(--light-gray)">connect</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+    <div id="content">
+        <header class="animatedParent animateOnce">
+            <a href="./index.html"><img class="header-logo animated fadeInUpShort" src="/media/main-horizontal-min.png"
+                    alt="Accelerate Retail Partners" /></a>
+            <nav class="animated fadeInUpShort">
+                <ui class="menu">
+                    <li class="menu-item-container">
+                        <a class="menu-item" id="home" href="./index.html">home</a>
+                    </li>
+                    <li class="menu-item-container">
+                        <a class="menu-item" id="services" href="./services.html">services</a>
+                    </li>
+                    <li class="menu-item-container">
+                        <a class="menu-item" id="press" href="./press.html">press</a>
+                    </li>
+                    <li class="menu-item-container">
+                        <a class="menu-item" id="connect" href="./connect.html"
+                            style="color: rgb(70, 70, 70)">connect</a>
+                    </li>
+                </ui>
+                <i class="nav-bars fas fa-bars" onclick="openNav()"></i>
+            </nav>
+            <nav class="nav-mobile">
+                <i class="exit-mobile fas fa-times" onclick="closeNav()"></i>
+                <ul class="mobile-menu">
+                    <li>
+                        <a class="mobile-menu-item" href="./index.html">home</a>
+                    </li>
+                    <li>
+                        <a class="mobile-menu-item" href="./services.html">services</a>
+                    </li>
+                    <li>
+                        <a class="mobile-menu-item" href="./press.html">press</a>
+                    </li>
+                    <li>
+                        <a class="mobile-menu-item" href="./connect.html" style="color: var(--light-gray)">connect</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
 
-    <!-- <section class="welcome center-items">
+        <!-- <section class="welcome center-items">
         <div class="welcome-text-container white">
             <h1 class="welcome-text partner-text">partner with us.</h1>
         </div>
         <div class="shape-1 btm-lft"></div>
     </section> -->
 
-    <section class="connect animatedParent">
-        <h1 class="welcome-text connect-title animated fadeInUpShort">partner with us.</h1>
-        <!-- <div class="shape-container"><div class="shape-1 tp-rt"></div></div> -->
-        <form id="connectForm" class="animated fadeInUpShort delay-500" onsubmit="subForm(event)">
-            <input class="form-input" type="text" id="first" name="First" placeholder="First Name" required><br>
-            <input class="form-input" type="text" id="last" name="Last" placeholder="Last Name" required><br>
-            <input class="form-input" type="text" id="company" name="Company" placeholder="Company"><br>
-            <input class="form-input" type="email" id="email" name="Email" placeholder="Email" required><br>
-            <input class="form-input" type="tel" pattern="[0-9]{3}(-?)[0-9]{3}(-?)[0-9]{4}" id="phone" name="Phone" placeholder="Phone" required><br>
-            <textarea class="form-input" id="comments" name="Comments" placeholder="Comments" wrap="hard"
-                rows="2"></textarea>
-            <input id="submitBtn" class="submit" type="submit"> 
-        </form>
-        <!-- <button id="submitBtn" class="submit" onclick="subForm()">Connect</button> -->
-        <p id="responseMsg" class="response-message">Thank you for connnecting with us! A member of our team will
-            connect with you as soon as possible.</p>
-    </section>
+        <section class="connect animatedParent">
+            <h1 class="welcome-text connect-title animated fadeInUpShort">partner with us.</h1>
+            <!-- <div class="shape-container"><div class="shape-1 tp-rt"></div></div> -->
+            <form id="connectForm" class="animated fadeInUpShort delay-500" onsubmit="subForm(event)">
+                <input class="form-input" type="text" id="first" name="First" placeholder="First Name" required><br>
+                <input class="form-input" type="text" id="last" name="Last" placeholder="Last Name" required><br>
+                <input class="form-input" type="text" id="company" name="Company" placeholder="Company"><br>
+                <input class="form-input" type="email" id="email" name="Email" placeholder="Email" required><br>
+                <input class="form-input" type="tel" pattern="[0-9]{3}(-?)[0-9]{3}(-?)[0-9]{4}" id="phone" name="Phone"
+                    placeholder="Phone" required><br>
+                <textarea class="form-input" id="comments" name="Comments" placeholder="Comments" wrap="hard"
+                    rows="2"></textarea>
+                <input id="submitBtn" class="submit" type="submit">
+            </form>
+            <!-- <button id="submitBtn" class="submit" onclick="subForm()">Connect</button> -->
+            <p id="responseMsg" class="response-message">Thank you for connnecting with us! A member of our team will
+                connect with you as soon as possible.</p>
+        </section>
 
-    <section class="us">
-        <div class="shape-container"><div class="shape-1 tp-rt red"></div></div>
-        <div class="employee-container">
-            <div class="employee animatedParent animateOnce" data-sequence='750'>
-                <div class="employee-image animated fadeInUpShort" data-id='1'>
-                    <img src="/media/employees/jb-portrait-min.jpeg">
+        <section class="us">
+            <div class="shape-container">
+                <div class="shape-1 tp-rt red"></div>
+            </div>
+            <div class="employee-container">
+                <div class="employee animatedParent animateOnce" data-sequence='750'>
+                    <div class="employee-image animated fadeInUpShort" data-id='1'>
+                        <img src="/media/employees/jb-portrait-min.jpeg">
+                    </div>
+                    <div class="employee-name center-items animated fadeInUpShort" data-id='2'>
+                        <h2>jessica berger</h2>
+                        <h4>Founder + CEO</h4>
+                    </div>
+                    <div class="employee-info center-items animated fadeInUpShort" data-id='3'>
+                        <a href="tel:6235566887">(623) 556-6887</a>
+                        <a href="mailto:jessica@accelerateretailpartners.com">jessica@accelerateretailpartners.com</a>
+                    </div>
                 </div>
-                <div class="employee-name center-items animated fadeInUpShort" data-id='2'>
-                    <h2>jessica berger</h2>
-                    <h4>Founder + CEO</h4>
-                </div>
-                <div class="employee-info center-items animated fadeInUpShort" data-id='3'>
-                    <a href="tel:6235566887">(623) 556-6887</a>
-                    <a href="mailto:jessica@accelerateretailpartners.com">jessica@accelerateretailpartners.com</a>
+                <div class="employee animatedParent animateOnce" data-sequence='750'>
+                    <div class="employee-image animated fadeInUpShort" data-id='1'>
+                        <img src="/media/employees/spen-portrait-min.jpeg">
+                    </div>
+                    <div class="employee-name center-items animated fadeInUpShort" data-id='2'>
+                        <h2>spencer sablan</h2>
+                        <h4>Account Manager</h4>
+                    </div>
+                    <div class="employee-info center-items animated fadeInUpShort" data-id='3'>
+                        <a href="tel:7028824603">(702) 882-4603</a>
+                        <a href="mailto:spencer@accelerateretailpartners.com">spencer@accelerateretailpartners.com</a>
+                    </div>
                 </div>
             </div>
-            <div class="employee animatedParent animateOnce" data-sequence='750'>
-                <div class="employee-image animated fadeInUpShort" data-id='1'>
-                    <img src="/media/employees/spen-portrait-min.jpeg">
-                </div>
-                <div class="employee-name center-items animated fadeInUpShort" data-id='2'>
-                    <h2>spencer sablan</h2>
-                    <h4>Account Manager</h4>
-                </div>
-                <div class="employee-info center-items animated fadeInUpShort" data-id='3'>
-                    <a href="tel:7028824603">(702) 882-4603</a>
-                    <a href="mailto:spencer@accelerateretailpartners.com">spencer@accelerateretailpartners.com</a>
-                </div>
+
+        </section>
+
+        <footer>
+            <div class="footer-logo-container">
+                <a href="/index.html"><img class="footer-logo" src="/media/white-arrow-min.png" /></a>
             </div>
-        </div>
 
-    </section>
-
-    <footer>
-        <div class="footer-logo-container">
-            <a href="/index.html"><img class="footer-logo" src="/media/white-arrow-min.png" /></a>
-        </div>
-
-        <!-- <div class="footer-link-container">
+            <!-- <div class="footer-link-container">
             <a class="footer-link" href="tel:6235566887">(623) 556-6887</a>
             <a class="footer-link" href="mailto:accelerateretail@gmail.com">accelerateretail@gmail.com</a>
         </div> -->
-    </footer>
+        </footer>
+    </div>
 
 </body>
 

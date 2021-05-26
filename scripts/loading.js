@@ -1,13 +1,4 @@
-$(window).on('load', function() {
-    $('#loading').hide();
-});
-
-anime({
-    targets: ".svg-target",
-    strokeDashoffset: [anime.setDashoffset, 0],
-    easing: 'linear',
-    duration: 5000,
-    direction: 'normal',
-    autoplay: true,
-    loop: true
-});
+$(() => {
+        $('#loading').fadeOut(1000);
+        $('#content').hide().fadeIn(2000);
+})
