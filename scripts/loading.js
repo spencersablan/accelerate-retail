@@ -1,4 +1,4 @@
 $(() => {
-        $('#loading').fadeOut(1000);
+        $('#loading').fadeOut(2000);
         $('#content').hide().fadeIn(2000);
 })
