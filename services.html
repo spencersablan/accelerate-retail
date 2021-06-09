@@ -19,6 +19,15 @@
     <link rel="stylesheet" href="/css/services.css">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-CRKQ2WP0YE"></script>
     <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'G-CRKQ2WP0YE');</script>
+
+    <script src="/node_modules/jquery/dist/jquery.min.js" defer></script>
+    <script src="/node_modules/animejs/lib/anime.min.js" defer></script>
+    <script src="/node_modules/intersection-observer/intersection-observer.js" defer></script>
+    <script type="text/javascript" src="/node_modules/slick-carousel/slick/slick.min.js" defer></script>
+    <script type="text/javascript" src="/node_modules/animate-it/js/css3-animate-it.js" defer></script>
+    <script src="/scripts/nav.js" defer></script>
+    <script src="/scripts/arrow-animation.js" defer></script>
+    <script src="/scripts/partner-slider.js" defer></script>
 </head>
 
 <body id="services">
@@ -64,7 +73,7 @@
                 <div class="shape-1 tp-rt"></div>
             </div>
             <div class="service-container">
-                <div class="service-type animatedParent animateOnce" data-sequence="750">
+                <div class="service-type animatedParent animateOnce" data-sequence="200">
                     <div class="service-icon-container center-items animated fadeInUpShort" data-id="1"><i
                             class="fas fa-lightbulb"></i></div>
                     <div class="service-heading-container animated fadeInUpShort" data-id="2">
@@ -75,7 +84,7 @@
                             category insights to help you shape product innovations that stand out above the rest.</p>
                     </div>
                 </div>
-                <div class="service-type animatedParent animateOnce" data-sequence="750">
+                <div class="service-type animatedParent animateOnce" data-sequence="200">
                     <div class="service-icon-container center-items animated fadeInUpShort" data-id="1"><i
                             class="fas fa-map-marked-alt"></i></div>
                     <div class="service-heading-container animated fadeInUpShort" data-id="2">
@@ -89,7 +98,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="service-type animatedParent animateOnce" data-sequence="750">
+                <div class="service-type animatedParent animateOnce" data-sequence="200">
                     <div class="service-icon-container center-items animated fadeInUpShort" data-id="1"><i
                             class="fas fa-hand-holding-usd"></i></div>
                     <div class="service-heading-container animated fadeInUpShort" data-id="2">
@@ -104,7 +113,7 @@
                             customized retailer programs.</p>
                     </div>
                 </div>
-                <div class="service-type animatedParent animateOnce" data-sequence="750">
+                <div class="service-type animatedParent animateOnce" data-sequence="200">
                     <div class="service-icon-container center-items animated fadeInUpShort" data-id="1"><i
                             class="fas fa-laptop"></i></div>
                     <div class="service-heading-container animated fadeInUpShort" data-id="2">
@@ -121,61 +130,53 @@
                 </div>
             </div>
         </section>
-        <section id="partners" class="our-partners center-items animatedParent animateOnce" data-sequence="1000">
+        <section id="partners" class="our-partners center-items animatedParent animateOnce" data-sequence="500">
             <h2 class="animated fadeInUpShort" data-id="1">our partners</h2>
             <div class="partner-slider-container center-items animated fadeInUpShort" data-id="2">
-                <div class="partner-logo-container"><img class="partner-logo" src="/media/partners/whole-foods-min.png">
+                <div class="partner-logo-container"><img class="partner-logo" src="/media/partners/whole-foods-min.png"loading="lazy">
                 </div>
-                <div class="partner-logo-container"><img class="partner-logo" src="/media/partners/petsmart-min.png">
+                <div class="partner-logo-container"><img class="partner-logo" src="/media/partners/petsmart-min.png"loading="lazy">
                 </div>
-                <div class="partner-logo-container"><img class="partner-logo" src="/media/partners/chewy-min.png"></div>
+                <div class="partner-logo-container"><img class="partner-logo" src="/media/partners/chewy-min.png"loading="lazy"></div>
                 <div class="partner-logo-container"><img class="partner-logo"
-                        src="/media/partners/Noggin-Boss-Logoresized_340x-min.png"></div>
+                        src="/media/partners/Noggin-Boss-Logoresized_340x-min.png"loading="lazy"></div>
                 <div class="partner-logo-container"><img class="partner-logo"
-                        src="/media/partners/Brushfire-Tacos-y-Tapas-Logo-min.png"></div>
-                <div class="partner-logo-container"><img class="partner-logo" src="/media/partners/target-min.png">
+                        src="/media/partners/Brushfire-Tacos-y-Tapas-Logo-min.png"loading="lazy"></div>
+                <div class="partner-logo-container"><img class="partner-logo" src="/media/partners/target-min.png"loading="lazy">
                 </div>
-                <div class="partner-logo-container"><img class="partner-logo" src="/media/partners/sprouts-min.png">
-                </div>
-                <div class="partner-logo-container"><img class="partner-logo"
-                        src="/media/partners/natural-grocers-min.png">
-                </div>
-                <div class="partner-logo-container"><img class="partner-logo" src="/media/partners/fresh-thyme-min.png">
-                </div>
-                <div class="partner-logo-container"><img class="partner-logo" src="/media/partners/new-seasons-min.png">
-                </div>
-                <div class="partner-logo-container"><img class="partner-logo" src="/media/partners/kroger-min.png">
-                </div>
-                <div class="partner-logo-container"><img class="partner-logo" src="/media/partners/costco-min.png">
-                </div>
-                <div class="partner-logo-container"><img class="partner-logo" src="/media/partners/heb-min.png"></div>
-                <div class="partner-logo-container"><img class="partner-logo" src="/media/partners/meijer-min.png">
-                </div>
-                <div class="partner-logo-container"><img class="partner-logo" src="/media/partners/menards-min.png">
+                <div class="partner-logo-container"><img class="partner-logo" src="/media/partners/sprouts-min.png"loading="lazy">
                 </div>
                 <div class="partner-logo-container"><img class="partner-logo"
-                        src="/media/partners/pet-supplies-plus-min.png"></div>
-                <div class="partner-logo-container"><img class="partner-logo" src="/media/partners/petco-min.png"></div>
-                <div class="partner-logo-container"><img class="partner-logo" src="/media/partners/tjx-min.png"></div>
-                <div class="partner-logo-container"><img class="partner-logo" src="/media/partners/wegmans-min.png">
+                        src="/media/partners/natural-grocers-min.png"loading="lazy">
+                </div>
+                <div class="partner-logo-container"><img class="partner-logo" src="/media/partners/fresh-thyme-min.png"loading="lazy">
+                </div>
+                <div class="partner-logo-container"><img class="partner-logo" src="/media/partners/new-seasons-min.png"loading="lazy">
+                </div>
+                <div class="partner-logo-container"><img class="partner-logo" src="/media/partners/kroger-min.png"loading="lazy">
+                </div>
+                <div class="partner-logo-container"><img class="partner-logo" src="/media/partners/costco-min.png"loading="lazy">
+                </div>
+                <div class="partner-logo-container"><img class="partner-logo" src="/media/partners/heb-min.png"loading="lazy"></div>
+                <div class="partner-logo-container"><img class="partner-logo" src="/media/partners/meijer-min.png"loading="lazy">
+                </div>
+                <div class="partner-logo-container"><img class="partner-logo" src="/media/partners/menards-min.png"loading="lazy">
+                </div>
+                <div class="partner-logo-container"><img class="partner-logo"
+                        src="/media/partners/pet-supplies-plus-min.png"loading="lazy"></div>
+                <div class="partner-logo-container"><img class="partner-logo" src="/media/partners/petco-min.png"loading="lazy"></div>
+                <div class="partner-logo-container"><img class="partner-logo" src="/media/partners/tjx-min.png"loading="lazy"></div>
+                <div class="partner-logo-container"><img class="partner-logo" src="/media/partners/wegmans-min.png"loading="lazy">
                 </div>
             </div>
         </section>
 
         <footer>
             <div class="footer-logo-container"> <a href="/index.html"><img class="footer-logo"
-                        src="/media/white-arrow-min.png" /></a></div>
+                        src="/media/white-arrow-min.png" loading="lazy"/></a></div>
         </footer>
     </div>
-    <script src="/node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="/node_modules/animejs/lib/anime.min.js"></script>
-    <script src="/node_modules/intersection-observer/intersection-observer.js"></script>
-    <script type="text/javascript" src="/node_modules/slick-carousel/slick/slick.min.js"></script>
-    <script type="text/javascript" src="/node_modules/animate-it/js/css3-animate-it.js"></script>
-    <script src="/scripts/loading.js" async defer></script>
-    <script src="/scripts/nav.js"></script>
-    <script src="/scripts/arrow-animation.js"></script>
-    <script src="/scripts/partner-slider.js"></script>
+    <script src="/scripts/loading.js" async></script>
 </body>
 
 </html>

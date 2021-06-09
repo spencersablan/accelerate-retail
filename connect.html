@@ -27,6 +27,13 @@
 
         gtag('config', 'G-CRKQ2WP0YE');
     </script>
+
+    <script src="/node_modules/jquery/dist/jquery.min.js" defer></script>
+    <script src="/node_modules/animejs/lib/anime.min.js" defer></script>
+    <script src="/node_modules/animate-it/js/css3-animate-it.js" defer></script>
+
+    <script src="/scripts/nav.js" defer></script>
+    <script src="/scripts/form.js" defer></script>
 </head>
 
 <body id="connect">
@@ -109,9 +116,9 @@
                 <div class="shape-1 tp-rt red"></div>
             </div>
             <div class="employee-container">
-                <div class="employee animatedParent animateOnce" data-sequence='750'>
+                <div class="employee animatedParent animateOnce" data-sequence='200'>
                     <div class="employee-image animated fadeInUpShort" data-id='1'>
-                        <img src="/media/employees/jb-portrait-min.jpeg">
+                        <img src="/media/employees/jb-portrait-min.jpeg" loading="lazy">
                     </div>
                     <div class="employee-name center-items animated fadeInUpShort" data-id='2'>
                         <h2>jessica berger</h2>
@@ -122,9 +129,9 @@
                         <a href="mailto:jessica@accelerateretailpartners.com">jessica@accelerateretailpartners.com</a>
                     </div>
                 </div>
-                <div class="employee animatedParent animateOnce" data-sequence='750'>
+                <div class="employee animatedParent animateOnce" data-sequence='200'>
                     <div class="employee-image animated fadeInUpShort" data-id='1'>
-                        <img src="/media/employees/spen-portrait-min.jpeg">
+                        <img src="/media/employees/spen-portrait-min.jpeg" loading="lazy">
                     </div>
                     <div class="employee-name center-items animated fadeInUpShort" data-id='2'>
                         <h2>spencer sablan</h2>
@@ -141,7 +148,7 @@
 
         <footer>
             <div class="footer-logo-container">
-                <a href="/index.html"><img class="footer-logo" src="/media/white-arrow-min.png" /></a>
+                <a href="/index.html"><img class="footer-logo" src="/media/white-arrow-min.png" loading="lazy"/></a>
             </div>
 
             <!-- <div class="footer-link-container">
@@ -150,15 +157,7 @@
         </div> -->
         </footer>
     </div>
-
+    <script src="/scripts/loading.js" async></script>
 </body>
-
-<script src="/node_modules/jquery/dist/jquery.min.js"></script>
-<script src="/node_modules/animejs/lib/anime.min.js"></script>
-<script src="/node_modules/animate-it/js/css3-animate-it.js"></script>
-
-<script src="/scripts/loading.js" async defer></script>
-<script src="/scripts/nav.js"></script>
-<script src="/scripts/form.js"></script>
 
 </html>

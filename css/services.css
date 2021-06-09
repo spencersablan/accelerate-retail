@@ -3,17 +3,19 @@ SERVICES
 ***********/
 
 .services {
-    height: 800px;
+    height: 700px;
 }
 
 
 .service-container {
+    position: relative;
     width: 1800px;
     height: 600px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+    bottom: 50px;
 }
 
 .service-type {
